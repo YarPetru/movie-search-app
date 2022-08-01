@@ -1,0 +1,35 @@
+.form {
+  display: flex;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  margin-right: 10px;
+  background-color: var(--btn-color);
+  color: var(--light-accent);
+  border-radius: var(--min-border-radius);
+  border: none;
+}
+
+.button:focus,
+.button:hover {
+  cursor: pointer;
+  background-color: var(--light-accent);
+  color: var(--dark-font);
+  transition: var(--transition);
+}
+
+.buttonLabel {
+  font-family: var(--font);
+  font-size: var(--main-font-size);
+}
+
+.input {
+  border-radius: var(--min-border-radius);
+  font-family: var(--font);
+  font-size: var(--main-font-size);
+  color: var(--main-font);
+}

@@ -1,0 +1,141 @@
+.gridContainer {
+  padding: 20px 0 20px 0;
+}
+
+.moviesList {
+  margin: 0;
+  padding: 0px;
+  display: grid;
+
+  grid-template:
+    'pic1 pic2 pic3 pic4 pic5' 150px
+    'pic1 pic2 pic3 pic4 pic5' 150px
+    'pic6 pic7 pic8 pic9 pic10' 150px
+    'pic6 pic7 pic8 pic9 pic10' 150px
+    'pic11 pic12 pic13 pic14 pic15' 150px
+    'pic11 pic12 pic13 pic14 pic15' 150px
+    'pic16 pic17 pic18 pic19 pic20' 150px
+    'pic16 pic17 pic18 pic19 pic20' 150px
+    / 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.movieItem {
+  font-size: var(--main-font-size);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.movieItem:nth-child(1) {
+  grid-area: pic1;
+}
+.movieItem:nth-child(2) {
+  grid-area: pic2;
+}
+.movieItem:nth-child(3) {
+  grid-area: pic3;
+}
+.movieItem:nth-child(4) {
+  grid-area: pic4;
+}
+.movieItem:nth-child(5) {
+  grid-area: pic5;
+}
+.movieItem:nth-child(6) {
+  grid-area: pic6;
+}
+.movieItem:nth-child(7) {
+  grid-area: pic7;
+}
+.movieItem:nth-child(8) {
+  grid-area: pic8;
+}
+.movieItem:nth-child(9) {
+  grid-area: pic9;
+}
+.movieItem:nth-child(10) {
+  grid-area: pic10;
+}
+.movieItem:nth-child(11) {
+  grid-area: pic11;
+}
+.movieItem:nth-child(12) {
+  grid-area: pic12;
+}
+.movieItem:nth-child(13) {
+  grid-area: pic13;
+}
+.movieItem:nth-child(14) {
+  grid-area: pic14;
+}
+.movieItem:nth-child(15) {
+  grid-area: pic15;
+}
+.movieItem:nth-child(16) {
+  grid-area: pic16;
+}
+.movieItem:nth-child(17) {
+  grid-area: pic17;
+}
+.movieItem:nth-child(18) {
+  grid-area: pic18;
+}
+.movieItem:nth-child(19) {
+  grid-area: pic19;
+}
+.movieItem:nth-child(20) {
+  grid-area: pic20;
+}
+
+.link {
+  position: relative;
+  height: 100%;
+}
+
+.itemBack {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: rgba(245, 239, 237, 0.9);
+  color: var(--main-font);
+}
+
+.link > .itemPoster,
+.link > .itemBack {
+  transition: var(--transition);
+}
+
+.link > .itemPoster {
+  height: 100%;
+  width: 100%;
+  transform: rotateY(0deg);
+}
+
+.link > .itemBack {
+  position: absolute;
+  padding: 15px;
+  opacity: 0;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  transform: rotateY(-180deg);
+}
+
+.link:hover > .itemPoster {
+  transform: rotateY(180deg);
+}
+
+.link:hover > .itemBack {
+  opacity: 1;
+  transform: rotateY(0deg);
+}
+
+.movieRate {
+  font-size: 32px;
+}
+.movieTitle {
+  text-align: center;
+}

@@ -1,0 +1,78 @@
+.movieInfoContainer {
+  position: relative;
+  padding: var(--main-gap);
+  display: flex;
+  align-items: center;
+  border-radius: var(--border-radius);
+  box-shadow: var(--minimal-shadow);
+  color: var(--main-font);
+  background-color: var(--light-accent);
+}
+
+.poster {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+.poster:hover {
+  box-shadow: var(--accent-shadow);
+  transform: var(--scale);
+}
+
+.title {
+  font-size: var(--large-font-size);
+  margin: 0 0 20px 0;
+}
+
+.termsList {
+  margin: 0px 0px 0px 20px;
+}
+
+.term {
+  font-weight: 400;
+  font-size: var(--medium-font-size);
+}
+
+.definition {
+  font-size: var(--main-font-size);
+  padding: var(--cards-grid-gap);
+}
+
+.buttonLink {
+  position: absolute;
+  top: var(--main-gap);
+  right: var(--main-gap);
+  font-family: var(--font);
+  color: var(--light-accent);
+  text-decoration: none;
+  padding: 10px;
+  background-color: var(--btn-color);
+  border-radius: var(--min-border-radius);
+  transition: var(--transition);
+}
+
+.buttonLink:hover,
+.buttonLink:focus {
+  background-color: var(--main-font);
+}
+
+/* ADDITIONAL INFO */
+
+.header {
+  color: var(--main-font);
+  font-size: var(--medium-font-size);
+  font-weight: 500;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--main-font);
+  transition: var(--transition);
+}
+
+.link:hover,
+.link:focus {
+  /* text-decoration: underline; */
+  color: var(--bright-accent);
+}

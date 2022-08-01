@@ -1,0 +1,34 @@
+.header {
+  padding: 20px;
+  background-color: var(--light-accent);
+}
+
+.mainSection {
+  padding: 20px;
+}
+
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.navigation {
+  display: flex;
+}
+
+.link:not(:last-child) {
+  margin-right: 40px;
+}
+
+.link:focus,
+.link:hover {
+  color: var(--bright-accent);
+}
+
+.activeLink {
+  composes: link;
+  color: var(--bright-accent);
+}
