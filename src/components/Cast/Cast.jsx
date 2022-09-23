@@ -23,14 +23,6 @@ const GetMovieCast = () => {
           behavior: 'smooth',
         });
         setStatus('resolved');
-        // const { height: cardHeight } = document
-        //   .querySelector('ul')
-        //   .getBoundingClientRect();
-
-        // window.scrollBy({
-        //   top: cardHeight,
-        //   behavior: 'smooth',
-        // });
       } catch (error) {
         setError(error);
         setStatus('rejected');

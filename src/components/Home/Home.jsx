@@ -46,15 +46,6 @@ const Home = () => {
           }
         )}
       <h1 className={s.header}>TOP 20 Movies of the day</h1>
-      {/* <p>
-        Search TOP movies for the{' '}
-        <button className="periodButton" type="submit">
-          day
-        </button>
-        <button className="periodButton" type="submit">
-          week
-        </button>
-      </p> */}
       {status === 'resolved' && <MoviesList moviesArray={items} />}
     </>
   );
