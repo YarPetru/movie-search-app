@@ -73,6 +73,5 @@
 
 .link:hover,
 .link:focus {
-  /* text-decoration: underline; */
   color: var(--bright-accent);
 }
